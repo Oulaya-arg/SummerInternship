@@ -1,0 +1,9 @@
+How Hadoop Works
+Hadoop makes it easier to use all the storage and processing capacity in cluster servers,
+ and to execute distributed processes against huge amounts of data.
+ Hadoop provides the building blocks on which other services and applications can be built.
+
+Applications that collect data in various formats can place data into the Hadoop cluster by using an API operation to connect to the NameNode.
+ The NameNode tracks the file directory structure and placement of “chunks” for each file, replicated across DataNodes.
+ To run a job to query the data, provide a MapReduce job made up of many map and reduce tasks that run against the data in HDFS spread across the DataNodes.
+ Map tasks run on each node against the input files supplied, and reducers run to aggregate and organize the final output.
